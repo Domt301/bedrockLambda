@@ -31,7 +31,7 @@ export class BedrockStack extends Stack {
 
     bedrockLambda.addToRolePolicy(
       new aws_iam.PolicyStatement({
-        actions: ["bedrock-runtime:InvokeModel"],
+        actions: ["bedrock:InvokeModel"],
         resources: ["*"],
       })
     );
